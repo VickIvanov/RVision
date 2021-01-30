@@ -1,20 +1,21 @@
-FROM node:14
+FROM node:12.14.1-alpine AS build
 
-# Create app directory
 WORKDIR /app
-
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
 COPY package*.json ./
+RUN npm ci
+COPY . ./
 
-RUN npm install
-# If you are building your code for production
-# RUN npm ci --only=production
+RUN npm run build && npm prune --production
 
-# Bundle app source
-COPY . .
 
-EXPOSE 8000
+FROM node:12.14.1-alpine
 
-CMD [ "npm", "start" ]
+WORKDIR /app
+ENV NODE_ENV=production
+
+COPY --from=build /app/dist /app/dist
+COPY --from=build /app/node_modules /app/node_modules
+
+EXPOSE 3000
+ENTRYPOINT [ "node" ]
+CMD [ "dist/main.js" ]
