@@ -1,0 +1,195 @@
+Audacity
+Amazon
+iTunes
+RealPlayer
+Sound Recorder
+VLC
+Winamp
+Windows Media Player
+Discord
+Skype
+Ventrilo
+Access
+MySQL
+SQL
+Card reader
+Controller
+Modem
+Motherboard chipset
+Network card
+Printer
+Scanner
+Sound card
+Tape drive
+USB devices
+Video card
+Google Chrome
+Mozilla Firefox
+Opera
+Apple
+Safari
+Internet Explorer
+VLC
+Windows Media Player
+AIX and AIXL
+AmigaOS
+BSD
+CP/M
+DUnix
+DYNIX/ptx
+Fuchsia
+Goobuntu
+HP-UX
+IRIX
+ISIS
+MINIX
+MS-DOS
+NEXTSTEP
+OS/2
+OSF/1
+OxygenOS
+SCO
+Sun Solaris
+Symbian
+System 7
+System V
+Tru64 Unix
+Ultrix
+Unisys
+Unix
+UnixWare
+WatchOS
+Xenix
+Android
+iOS
+Linux
+macOS
+Windows
+Google Slides
+Microsoft
+PowerPoint
+iWork Keynot
+OpenOffice Impress
+ActionScript
+ALGOL
+Ada
+AIML *
+Altair BASIC
+Assembly
+AutoHotkey
+Babel
+BASIC
+Batch file
+BCPL
+BeanShell
+Brooks
+C
+C#
+C++
+CL
+Clojure
+COBOL
+CoffeeScript
+Common Lisp
+CPL
+CSS
+Curl
+Curry
+D
+DarkBASIC
+Dart
+Datalog
+dBASE
+Dylan
+EuLisp
+Elixir
+F
+F#
+FORTRAN
+FoxPro
+Franz Lisp
+GameMaker
+Go
+GW Basic
+Haskell
+HDML
+HTML
+InterLisp
+ksh
+Java
+JavaScript
+JCL
+Julia
+Kotlin
+LeLisp
+Lisp
+LiveScript
+LOGO
+Lua
+MACLISP
+Matlab
+Metro
+MUMPS
+Nim
+Objective-C
+OCaml
+Pascal
+Perl
+PHP
+Pick
+PureBasic
+Python
+Prolog
+QBasic
+R
+Racket
+Reia
+RPG
+Ruby
+Rust
+Scala
+Scheme
+Scratch
+SGML
+Simula
+Smalltalk
+SPL
+SQL
+Stanford LISP
+Swift
+Tcl
+Turbo Pascal
+True BASIC
+VHDL
+Visual Basic
+Visual FoxPro
+WML
+WHTML
+XLISP
+XML
+YAML
+ZetaLisp
+Google Sheets
+iWork Numbers
+LibreOffice
+Lotus
+Lotus Symphony
+Microsoft Excel
+OpenOffice
+VisiCalc
+Abiword.
+Apple iWork
+Apple TextEdit
+Corel WordPerfect
+Dropbox Paper
+Google Docs
+LibreOffice
+Microsoft Office
+Microsoft WordPad
+Microsoft Works
+SoftMaker FreeOffice
+OpenOffice
+SSuite
+Sun StarOffice
+Textilus
+Kingsoft WPS Office
