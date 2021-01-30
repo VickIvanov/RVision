@@ -37,6 +37,8 @@
 Проект представляет собой монорепозиторий с прилинкованным субрепозиторием для Frontend (ссылка на папку `frontend-service @ 881641e`).
 Исходный код серверной backend-части — в папке `backend-service`, исходный код ML-моделей на Python — в виде отдельного микросервиса в папке `data-service`.
 
+Основной скрипт анализа данных доступен также и в виде `Jupiter Notebook` - [по этой ссылке](https://github.com/VickIvanov/RVision/blob/dataservice/data-service/r_vision_preview.ipynb).
+
 Каждая директория по возможности содержит файл `Makefile` с базовыми командами.
 
 ## Архитектура приложения
