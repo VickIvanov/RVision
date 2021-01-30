@@ -39,4 +39,4 @@ services:
 networks:
   net:
     driver: bridge
-# https://github.com/VickIvanov/RVision.git
+# https://github.com/VickIvanov/RVision.gitg

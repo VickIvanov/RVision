@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="df804f83-e5e4-45d2-bb89-5d761f9126f2" name="dev" url="http://188.68.217.68">
+        <fileTransfer rootFolder="/rvision" accessType="SFTP" host="188.68.217.68" port="7743" sshConfigId="6501f20b-dc45-47b9-a33a-d8fd01f33d72" sshConfig="root@188.68.217.68:7743 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions controlEncoding="UTF-8" dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
