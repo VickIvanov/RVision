@@ -2,26 +2,28 @@ version: '3'
 
 services:
   # postgres-service
-  postgres:
-    image: postgres:11.1
-    container_name: postgres
-    networks:
-      - net
-    ports:
-      - 5432:5432
-    volumes:
-      - ./.postgres-data:/var/lib/postgresql/data:rw
+  mongodb:
+    image: mongo:latest
+    container_name: "mongodb"
     environment:
-      LC_ALL: 'C.UTF-8'
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_HOST: postgres
-      POSTGRES_DB: backend
-      PGDATA: /var/lib/postgresql/data
-    restart: unless-stopped
-  
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+      - ./data/db:/data/db
+    ports:
+      - 27017:27017
+    command: mongod --smallfiles --logpath=/dev/null # --quiet
+
   # dataset-service
   # TODO: Add YAML script for dataset service
+  build: ./data-service
+  container_name: data-serivce
+  networks:
+    - net
+  ports:
+    - 5000:5000
+  depends_on:
+  restart: unless-stopped
 
   # backend-service
   backend-service:
@@ -30,9 +32,9 @@ services:
     networks:
       - net
     ports:
-      - 8000:8000
+      - 3001:3000
     depends_on:
-      - postgres
+      - mongodb
     restart: unless-stopped
 
   # frontend-service
