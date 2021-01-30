@@ -6,7 +6,9 @@ from flask import request
 import sqlite3
 app = Flask(__name__)
 
-
+@app.route('/')
+def hello():
+    return jsonify('hello world')
 @app.route('/data', methods=['GET'])
 def get_tasks():
     offset = int(request.args.get('offset', '0'))

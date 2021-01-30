@@ -1,44 +1,57 @@
-import {Controller, Get} from '@nestjs/common';
-import {DataService} from "./data.service";
-import {CreateDataDto} from "./create-data.dto";
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Header,
+  HttpCode,
+  HttpStatus,
+  Param,
+  Post,
+  Put,
+} from '@nestjs/common';
+import { CreateDataDto } from './dto/create-data.dto';
+import { UpdateDataDto } from './dto/update-data.dto';
+import { DataService } from './data.service';
+import { Data } from './schemas/data.schema';
 
 @Controller('data')
 export class DataController {
 
-    constructor(private dataService: DataService) {
-    }
+  constructor(private readonly dataService: DataService) {
+  }
 
-    @Get()
-    getAll() {
-        return this.dataService.findAll();
-    }
+  @Get()
+  getAll(): Promise<Data[]> {
+    return this.dataService.getAll()
+  }
 
-    @Get("/init")
-    init() {
-        let d1 = new CreateDataDto();
-        let d2 = new CreateDataDto();
+  @Get(':id')
+  getOne(@Param('id') id: string): Promise<Data> {
+    return this.dataService.getById(id)
+  }
 
-        d1.id = "1";
-        d1.attack_pattern = Array.of("1", "2", "3");
-        d1.campaign = Array.of("1", "2", "3");
-        d1.technique = Array.of("1", "2", "3");
-        d1.city = Array.of("1", "2", "3");
-        d1.country = Array.of("1", "2", "3");
-        d1.attack_pattern = Array.of("1", "2", "3");
-        d1.identity = Array.of("1", "2", "3");
-        d1.ioc = Array.of("1", "2", "3");
+  @Post()
+  @HttpCode(HttpStatus.CREATED)
+  @Header('Cache-Control', 'none')
+  create(@Body() createDataDto: CreateDataDto): Promise<Data> {
+    return this.dataService.create(createDataDto)
+  }
 
-        d2.id = "2";
-        d2.attack_pattern = Array.of("1", "2", "3");
-        d2.campaign = Array.of("1", "2", "3");
-        d2.technique = Array.of("1", "2", "3");
-        d2.city = Array.of("1", "2", "3");
-        d2.country = Array.of("1", "2", "3");
-        d2.attack_pattern = Array.of("1", "2", "3");
-        d2.identity = Array.of("1", "2", "3");
-        d2.ioc = Array.of("1", "2", "3");
+  @Delete(':id')
+  remove(@Param('id') id: string): Promise<Data> {
+    return this.dataService.remove(id)
+  }
 
-        this.dataService.create(d1);
-        this.dataService.create(d2);
-    }
+  @Put(':id')
+  update(@Body() updateDataDto: UpdateDataDto, @Param('id') id: string): Promise<Data> {
+    return this.dataService.update(id, updateDataDto)
+  }
+
+  // ------------------------------------------------------
+  //  Endpoints for Charts
+  // ------------------------------------------------------
+
+  // TODO: Just do it!
+
 }
