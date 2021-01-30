@@ -1,12 +1,16 @@
-const express = require('express');
+import express from 'express';
 
 const app = express();
 const PORT = 8000;
 
-app.get('/', (req: any, res: { send: (arg0: string) => any; }) => res.send('RVision'));
+app.get('/', (req, res) => {
+  res.send('R-Vision API');
+});
 
-app.get('/api/', (req: any, res: { send: (arg0: string) => any; }) => res.send('API'));
+app.get('/api', (req, res) => {
+  res.send('/');
+});
 
 app.listen(PORT, () => {
-  console.log(`⚡️[server]: Server is running at https://127.0.0.1:${PORT}`);
+  return console.log(`server is listening on ${PORT}`);
 });
