@@ -1,0 +1,1 @@
+{"ioc": [], "date": "full day start early finishing late night", "country": "Bitcoin", "malware": ["2.2.", "6.2.", "6.1.", "6.3.", "2.1.", "2.3.", "Tinymet", "(e.g.", "SDBbot", "4.1."], "software": ["access", "c++", "html"], "mitre_attack": [], "threat_actor": ["cobalt", "ta505"], "tool": [], "attack_pattern": [], "created": "2021-01-30 22:35:26.015588"}
