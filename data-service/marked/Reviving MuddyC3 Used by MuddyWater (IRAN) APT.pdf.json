@@ -1,0 +1,1 @@
+{"ioc": [], "date": "10 minute", "country": "Iran", "malware": ["0.5BTC.", "pas", "mimikatz"], "software": ["go", "access", "basic", "python"], "mitre_attack": [], "threat_actor": ["apt 26", "muddywater"], "tool": ["wmi", "mimikatz", "web"], "attack_pattern": [], "created": "2021-01-30 22:35:50.744656"}

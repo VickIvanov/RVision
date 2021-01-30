@@ -1,0 +1,1 @@
+{"ioc": [], "date": "early 2013", "country": "Myanmar", "malware": ["news.sophos.com/en-us/2020/11/04/a-new-apt-uses-dll-side-loads-to-killlsomeone", "schtasks", "Groza_1.dat.", "160.20.147.254", "PlugX"], "software": ["go", "windows", "microsoft"], "mitre_attack": [], "threat_actor": [], "tool": [], "attack_pattern": [], "created": "2021-01-30 22:36:34.408632"}
