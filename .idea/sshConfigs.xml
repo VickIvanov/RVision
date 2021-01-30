@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="188.68.217.68" id="6501f20b-dc45-47b9-a33a-d8fd01f33d72" keyPath="C:\Users\Administrator\.ssh\id_rsa.ppk" port="7743" nameFormat="DESCRIPTIVE" username="root" />
+    </configs>
+  </component>
+</project>
