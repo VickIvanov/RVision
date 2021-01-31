@@ -13,12 +13,12 @@ services:
     ports:
       - "27017:27017"
 
-#  # data-service
-#  data-service:
-#    build: ./data-service
-#    container_name: data-serivce
-#    ports:
-#      - 5001:5000
+  # data-service
+  data-service:
+    build: ./data-service
+    container_name: data-serivce
+    ports:
+      - 5001:5000
 
   # backend-service
   backend-service:
@@ -32,10 +32,21 @@ services:
       - mongo-service
     restart: unless-stopped
 
+  # parser-service
+  parser-serivce:
+    build: "./parser-service"
+    container_name: parser-serivce
+    networks:
+      - net
+    ports:
+      - 3002:3000
+    restart: unless-stopped
+
   # frontend-service
-  # TODO: Add YAML script for frontend service
+  # TODO: Frontend is deployed on Firebase, but could be moved here
 
 networks:
   net:
     driver: bridge
+
 # https://github.com/VickIvanov/RVision.git
