@@ -1,2 +1,5 @@
+.idea/
 .postgres-data/
+data/
 backend-service/node_modules/
+*.iml
