@@ -22,6 +22,8 @@ export class DataController {
   }
 
   @Get()
+  @Header("Access-Control-Allow-Origin", "*")
+  @Header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
   getAll(): Promise<Data[]> {
     return this.dataService.getAll()
   }
