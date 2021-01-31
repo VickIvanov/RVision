@@ -1,0 +1,2 @@
+0 * * * * cd ~/git/repo &&  git fetch && git checkout origin/master -- https://github.com/CyberMonitor/APT_CyberCriminal_Campagin_Collections
+30 * * * * cd ~/git/repo &&  git fetch && git checkout origin/master -- https://github.com/blackorbird/APT_REPORT
