@@ -38,6 +38,15 @@ export class DataController {
     return this.dataService.create(createDataDto)
   }
 
+  @Post("/init")
+  @HttpCode(HttpStatus.CREATED)
+  @Header('Cache-Control', 'none')
+  createAll(@Body() dtos: CreateDataDto[]): void {
+    for (let i = 0; i < dtos.length; i++) {
+      this.dataService.create(dtos[i])
+    }
+  }
+
   @Delete(':id')
   remove(@Param('id') id: string): Promise<Data> {
     return this.dataService.remove(id)
