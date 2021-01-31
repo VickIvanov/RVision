@@ -11,7 +11,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://188.68.217.68:3001/data",
+					"raw": "http://188.68.217.68:3000/data",
 					"protocol": "http",
 					"host": [
 						"188",
@@ -19,7 +19,7 @@
 						"217",
 						"68"
 					],
-					"port": "3001",
+					"port": "3000",
 					"path": [
 						"data"
 					]
@@ -42,7 +42,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://188.68.217.68:3001/data/init",
+					"raw": "http://188.68.217.68:3000/data/init",
 					"protocol": "http",
 					"host": [
 						"188",
@@ -50,7 +50,7 @@
 						"217",
 						"68"
 					],
-					"port": "3001",
+					"port": "3000",
 					"path": [
 						"data",
 						"init"
@@ -74,7 +74,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://188.68.217.68:3001/data",
+					"raw": "http://188.68.217.68:3000/data",
 					"protocol": "http",
 					"host": [
 						"188",
@@ -82,7 +82,7 @@
 						"217",
 						"68"
 					],
-					"port": "3001",
+					"port": "3000",
 					"path": [
 						"data"
 					]
@@ -96,12 +96,15 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3001/data/6015d265e33cc50023d6bb80",
+					"raw": "http://188.68.217.68:3000/data/6015d265e33cc50023d6bb80",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"188",
+						"68",
+						"217",
+						"68"
 					],
-					"port": "3001",
+					"port": "3000",
 					"path": [
 						"data",
 						"6015d265e33cc50023d6bb80"
@@ -116,7 +119,7 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://188.68.217.68:3001/data/clean",
+					"raw": "http://188.68.217.68:3000/data/clean",
 					"protocol": "http",
 					"host": [
 						"188",
@@ -124,7 +127,7 @@
 						"217",
 						"68"
 					],
-					"port": "3001",
+					"port": "3000",
 					"path": [
 						"data",
 						"clean"
