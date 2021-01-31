@@ -7,7 +7,7 @@ import { DataModule } from './data/dataModule';
 @Module({
   imports: [
     DataModule,
-    MongooseModule.forRoot(`mongodb://mongodb:27017/data`)
+    MongooseModule.forRoot(`mongodb://mongo-service:27017/data`)
   ],
   controllers: [AppController],
   providers: [AppService],

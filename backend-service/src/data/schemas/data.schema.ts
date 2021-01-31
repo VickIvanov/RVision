@@ -9,7 +9,7 @@ export class Data {
   id: string;
 
   @Prop()
-  created_at: string;
+  created: string;
 
   @Prop()
   attack_pattern: string[];

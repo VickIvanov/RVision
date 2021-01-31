@@ -1,5 +1,5 @@
 export class UpdateDataDto {
-  created_at: string;
+  created: string;
   attack_pattern: string[];
   treat_actor: string[];
   theat_actor: string[];

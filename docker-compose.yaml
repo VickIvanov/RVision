@@ -1,18 +1,17 @@
 version: '3'
 
 services:
-  # postgres-service
-  mongodb:
-    image: mongo:4.2
-    container_name: "mongodb"
-    environment:
-      - MONGO_DATA_DIR=/data/db
-      - MONGO_LOG_DIR=/dev/null
+  # mongo-service
+  mongo-service:
+    container_name: mongo-service
+    image: mongo:latest
+    restart: always
+    networks:
+      - net
     volumes:
-      - ./data/db:/data/db
+      - ./data:/data/db
     ports:
-      - 27017:27017
-    command: mongod --logpath=/dev/null # --quiet
+      - "27017:27017"
 
 #  # data-service
 #  data-service:
@@ -30,7 +29,7 @@ services:
     ports:
       - 3001:3000
     depends_on:
-      - mongodb
+      - mongo-service
     restart: unless-stopped
 
   # frontend-service
