@@ -49,3 +49,4 @@ ML модели размещены отдельно и запускаются в
 
 - [**Прототип проекта, т.е. рабочая MVP-версия (минимально работоспособная версия продукта)**](https://rvision-stellar.web.app/).
 - [Предварительная дорожная карта и смета](https://docs.google.com/spreadsheets/d/1UB8UeQOZ4nmgI7dRckGbxiV1xdOJTnLcRfTKUTH4xAA/edit?usp=sharing) общих затрат по разработке и внедрению на архитектуре заказчика для пилотной версии проекта.
+- [Прочие дополнительные материалы: идеи и предложения по развитию продукта, изученные при создания решения материалы и т.д.](https://drive.google.com/drive/folders/1iUpWJ6dt0x4Ce91cWjLZ-SQzpmUqsDSX?usp=sharing)
