@@ -62,7 +62,7 @@ services:
     restart: unless-stopped
 
   # frontend-service
-  # TODO: Frontend is deployed on Firebase, but could be moved here
+  # TODO: The Frontend Service has been deployed on Firebase, but could be moved here. Please check it separately.
 
 networks:
   net:
