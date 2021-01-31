@@ -47,6 +47,12 @@ export class DataController {
     }
   }
 
+  @Post("/clean")
+  @HttpCode(HttpStatus.OK)
+  cleanDatabase(): void {
+    this.dataService.cleanDatabase();
+  }
+
   @Delete(':id')
   remove(@Param('id') id: string): Promise<Data> {
     return this.dataService.remove(id)

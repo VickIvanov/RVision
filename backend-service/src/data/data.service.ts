@@ -30,4 +30,8 @@ export class DataService {
   async update(id: string, dataDto: UpdateDataDto): Promise<Data> {
     return this.dataModel.findByIdAndUpdate(id, dataDto, {new: true})
   }
+
+  async cleanDatabase() {
+      this.dataModel.deleteMany({}, () => {})
+  }
 }
