@@ -1,22 +1,22 @@
 # Документация по endpoints к backend
 
 Ссылка на API с данными:
-http://188.68.217.68:3001/data
+http://188.68.217.68:3000/data
 
 #### [Ссылка на Postman-коллекцию, схему эндпоинтов](r-vision.postman_collection.json)
 
 Также доступны следующие CRUD операции:
 
 1. Загрузить массив данных в БД.
-POST http://188.68.217.68:3001/data/init
+POST http://188.68.217.68:3000/data/init
 
 2. Создать новый объект
-POST http://188.68.217.68:3001/data/init
+POST http://188.68.217.68:3000/data/init
 
 3. Удалить объект по ID.
-DELETE http://188.68.217.68:3001/data/init
+DELETE http://188.68.217.68:3000/data/init
 
 4. Очистить базу данных.
-POST http://188.68.217.68:3001/data/clean
+POST http://188.68.217.68:3000/data/clean
 
 #### [Графическое представление примера получаемых данных](endpoints.jpg)
